@@ -31,7 +31,10 @@ const Doctor = ({ doctor }) => {
                         <button className='border-2 border-blue-500 w-full py-2 rounded-xl text-blue-500 font-bold hover:bg-blue-500 hover:text-white'>View Details</button>
                     </div>
                 </div>
+                
             </div>
+
+          
             
         </div>
     );
