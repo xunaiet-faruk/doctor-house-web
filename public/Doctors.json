@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "image": "./doctor1 (1).jpg",
+        "name": "Dr. Ayesha Rahman",
+        "education": "MBBS, FCPS (Medicine)",
+        "speciality": "Internal Medicine",
+        "experience": "12 Years",
+        "registrationNumber": "BMDC-45821"
+    },
+    {
+        "id": 2,
+        "image": "./doctor1 (2).jpg",
+        "name": "Dr. Mahmud Hasan",
+        "education": "MBBS, MS (Orthopedics)",
+        "speciality": "Orthopedic Surgeon",
+        "experience": "15 Years",
+        "registrationNumber": "BMDC-39174"
+    },
+    {
+        "id": 3,
+        "image": "./doctor1 (3).jpg",
+        "name": "Dr. Nusrat Jahan",
+        "education": "MBBS, DGO",
+        "speciality": "Gynecologist",
+        "experience": "10 Years",
+        "registrationNumber": "BMDC-52987"
+    },
+    {
+        "id": 4,
+        "image": "./doctor1 (4).jpg",
+        "name": "Dr. Tanvir Ahmed",
+        "education": "MBBS, MD (Cardiology)",
+        "speciality": "Cardiologist",
+        "experience": "14 Years",
+        "registrationNumber": "BMDC-47219"
+    },
+    {
+        "id": 5,
+        "image": "./doctor1 (5).jpg",
+        "name": "Dr. Farhana Islam",
+        "education": "MBBS, FCPS (Dermatology)",
+        "speciality": "Dermatologist",
+        "experience": "9 Years",
+        "registrationNumber": "BMDC-56432"
+    },
+    {
+        "id": 6,
+        "image": "./doctor6.jpg",
+        "name": "Dr. Rashed Kabir",
+        "education": "MBBS, MS (Neurosurgery)",
+        "speciality": "Neurosurgeon",
+        "experience": "18 Years",
+        "registrationNumber": "BMDC-31875"
+    }
+]
