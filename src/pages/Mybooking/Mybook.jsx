@@ -1,16 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLocation } from 'react-router';
 import Chartbooking from './Chartbooking';
 
 const Mybook = () => {
     const location =useLocation();
     const doctor =location.state;
+    const [doctors,setDoctos] =useState(location.state)
+    if(!doctors){
+        return (
+            <div className="text-center mt-20">
+                <h1 className="text-5xl font-bold text-red-500">
+                    No Appointment Found
+                </h1>
+            </div>
+        );
+    }
     const chartData = [
         {
             name: doctor.name,
             fee: parseInt(doctor.fee.replace("৳", ""))
         }
     ]
+
+    const HandleCancel =()=>{
+        setDoctos(null)
+    }
     console.log(doctor);
     return (
         <div>
@@ -27,7 +41,7 @@ const Mybook = () => {
                     </div>
                 </div>
                 <div className='mx-12 '>
-                    <button className='w-full cursor-pointer border-red-500 rounded-full py-2 border-2 text-black hover:bg-red-500 hover:text-white'>Cancel Appoinment</button>
+                    <button onClick={HandleCancel} className='w-full cursor-pointer border-red-500 rounded-full py-2 border-2 text-black hover:bg-red-500 hover:text-white'>Cancel Appoinment</button>
                 </div>
                 </div>
                 

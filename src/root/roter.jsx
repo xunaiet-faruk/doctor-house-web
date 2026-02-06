@@ -6,6 +6,7 @@ import Mainrouter from "./Mainrouter";
 import Home from "./Home/Home";
 import Mybook from "../pages/Mybooking/Mybook";
 import Doctordetails from "../component/Doctors/Doctordetails/Doctordetails";
+import Erropage from "../pages/Erropage";
 
 
 
@@ -13,6 +14,7 @@ export const router = createBrowserRouter([
     {
         path: "/",
         element: <Mainrouter/>,
+        errorElement:<Erropage/>,
         children : [
             {
                 index : true,
