@@ -1,12 +1,30 @@
 import { BiRegistered } from "react-icons/bi"
-import { useLoaderData, useParams } from "react-router"
+import { useLoaderData, useNavigate, useParams } from "react-router"
+import { ToastContainer, toast, Bounce } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
+
 
 const Doctordetails = () => {
+    const navigate =useNavigate()
     const data = useLoaderData()
     const { id } = useParams()
     const numberId = parseInt(id)
 
     const Singledata = data?.find(d => d.id === numberId)
+    const handleBooking = () => {
+        toast.success(`Appointment booked with ${Singledata.name}`, {
+            position: "top-right",
+            autoClose: 3000,
+            theme: "colored",
+            transition: Bounce
+        })
+
+        setTimeout(() => {
+            navigate("/booking", { state: Singledata })
+        }, 1200)   
+    }
+
+
 
     if (!Singledata) {
         return <p className="text-center text-xl">Doctor not found</p>
@@ -52,8 +70,6 @@ const Doctordetails = () => {
             </div>
 
 
-
-
             <div className="bg-white shadow-xl rounded-xl container mx-auto  h-[230px] mt-12 mb-12 ">
                 <div className="py-5 ">
                     <h1 className="text-4xl font-bold text-center">Book An Appoinment</h1>
@@ -66,7 +82,7 @@ const Doctordetails = () => {
                 <div className="border-t border-dashed border-gray-400 mx-12"></div>
 
                 <div className="mx-12 mt-5">
-                    <button className="w-full bg-blue-500 cursor-pointer hover:bg-blue-800 text-white rounded-full py-1">Book Appoinment Now</button>
+                    <button onClick={handleBooking} className="w-full bg-blue-500 cursor-pointer hover:bg-blue-800 text-white rounded-full py-1">Book Appoinment Now</button>
                 </div>
 
             </div>

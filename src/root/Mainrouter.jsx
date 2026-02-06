@@ -1,16 +1,19 @@
-import React from 'react';
-import { Outlet } from 'react-router';
-import Navbar from '../component/Navbar';
-import Footer from '../component/Footer/Footer';
+import { Outlet } from 'react-router'
+import Navbar from '../component/Navbar'
+import Footer from '../component/Footer/Footer'
+import { ToastContainer } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
 const Mainrouter = () => {
     return (
-        <div>
-            <Navbar/>
-            <Outlet/>
-            <Footer/>
-        </div>
-    );
-};
+        <>
+            <Navbar />
+            <Outlet />
+            <Footer />
 
-export default Mainrouter;
+            <ToastContainer />
+        </>
+    )
+}
+
+export default Mainrouter

@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
                 element : <Home/>
             },
             {
-                path : '/mybooking',
+                path : '/booking',
                 element : <Mybook/>
             },
             {
@@ -30,7 +30,8 @@ export const router = createBrowserRouter([
                     return res.json()
                 },
                 element: <Doctordetails />
-            }
+            },
+            
 
         ]
     },
