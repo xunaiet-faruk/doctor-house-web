@@ -48,6 +48,27 @@ const Doctordetails = () => {
                     </div>
 
                 </div>
+
+            </div>
+
+
+
+
+            <div className="bg-white shadow-xl rounded-xl container mx-auto  h-[230px] mt-12 mb-12 ">
+                <div className="py-5 ">
+                    <h1 className="text-4xl font-bold text-center">Book An Appoinment</h1>
+                </div>
+                <div className="border-t border-dashed border-gray-400 mx-12"></div>
+                <div className="mx-12 flex justify-between py-5">
+                    <h1 className="text-xl font-semibold ">Availivilty</h1>
+                    <h2 className="bg-green-200 px-6 rounded-full text-green-500 font-bold">Doctor Availabe Today</h2>
+                </div>
+                <div className="border-t border-dashed border-gray-400 mx-12"></div>
+
+                <div className="mx-12 mt-5">
+                    <button className="w-full bg-blue-500 cursor-pointer hover:bg-blue-800 text-white rounded-full py-1">Book Appoinment Now</button>
+                </div>
+
             </div>
         </div>
     )
