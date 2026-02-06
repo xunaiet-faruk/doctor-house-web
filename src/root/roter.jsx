@@ -5,6 +5,7 @@ import {
 import Mainrouter from "./Mainrouter";
 import Home from "./Home/Home";
 import Mybook from "../pages/Mybooking/Mybook";
+import Doctordetails from "../component/Doctors/Doctordetails/Doctordetails";
 
 
 
@@ -21,7 +22,16 @@ export const router = createBrowserRouter([
             {
                 path : '/mybooking',
                 element : <Mybook/>
+            },
+            {
+                path: '/details/:id',
+                loader: async () => {
+                    const res = await fetch('/Doctors.json')
+                    return res.json()
+                },
+                element: <Doctordetails />
             }
+
         ]
     },
 ]);

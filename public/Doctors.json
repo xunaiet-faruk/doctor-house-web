@@ -1,48 +1,63 @@
 [
     {
         "id": 1,
-        "image": "./doctor1 (1).jpg",
+        "image": "/doctor1 (1).jpg",
         "name": "Dr. Ayesha Rahman",
         "education": "MBBS, FCPS (Medicine)",
         "speciality": "Internal Medicine",
         "experience": "12 Years",
-        "registrationNumber": "BMDC-45821"
+        "registrationNumber": "BMDC-45821",
+        "workingPlace": "Dhaka Medical College Hospital",
+        "availability": "Sat – Thu (5:00 PM – 9:00 PM)",
+        "fee": "৳800"
     },
     {
         "id": 2,
-        "image": "./doctor1 (2).jpg",
+        "image": "/doctor1 (2).jpg",
         "name": "Dr. Mahmud Hasan",
         "education": "MBBS, MS (Orthopedics)",
         "speciality": "Orthopedic Surgeon",
         "experience": "15 Years",
-        "registrationNumber": "BMDC-39174"
+        "registrationNumber": "BMDC-39174",
+        "workingPlace": "National Institute of Traumatology & Orthopaedics (NITOR)",
+        "availability": "Sun – Thu (6:00 PM – 10:00 PM)",
+        "fee": "৳1000"
     },
     {
         "id": 3,
-        "image": "./doctor1 (3).jpg",
+        "image": "/doctor1 (3).jpg",
         "name": "Dr. Nusrat Jahan",
         "education": "MBBS, DGO",
         "speciality": "Gynecologist",
         "experience": "10 Years",
-        "registrationNumber": "BMDC-52987"
+        "registrationNumber": "BMDC-52987",
+        "workingPlace": "Bangabandhu Sheikh Mujib Medical University",
+        "availability": "Sat – Wed (4:00 PM – 8:00 PM)",
+        "fee": "৳900"
     },
     {
         "id": 4,
-        "image": "./doctor1 (4).jpg",
+        "image": "/doctor1 (4).jpg",
         "name": "Dr. Tanvir Ahmed",
         "education": "MBBS, MD (Cardiology)",
         "speciality": "Cardiologist",
         "experience": "14 Years",
-        "registrationNumber": "BMDC-47219"
+        "registrationNumber": "BMDC-47219",
+        "workingPlace": "United Hospital, Dhaka",
+        "availability": "Mon – Fri (6:00 PM – 9:00 PM)",
+        "fee": "৳1200"
     },
     {
         "id": 5,
-        "image": "./doctor1 (5).jpg",
+        "image": "/doctor1 (5).jpg",
         "name": "Dr. Farhana Islam",
         "education": "MBBS, FCPS (Dermatology)",
         "speciality": "Dermatologist",
         "experience": "9 Years",
-        "registrationNumber": "BMDC-56432"
+        "registrationNumber": "BMDC-56432",
+        "workingPlace": "Popular Diagnostic Center, Dhanmondi",
+        "availability": "Sun – Thu (5:00 PM – 9:00 PM)",
+        "fee": "৳700"
     },
     {
         "id": 6,
@@ -51,6 +66,9 @@
         "education": "MBBS, MS (Neurosurgery)",
         "speciality": "Neurosurgeon",
         "experience": "18 Years",
-        "registrationNumber": "BMDC-31875"
+        "registrationNumber": "BMDC-31875",
+        "workingPlace": "Square Hospital, Dhaka",
+        "availability": "Mon – Thu (7:00 PM – 10:00 PM)",
+        "fee": "৳1500"
     }
 ]

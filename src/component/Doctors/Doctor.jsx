@@ -1,5 +1,6 @@
 import React from 'react';
 import { BiRegistered } from 'react-icons/bi';
+import { Link } from 'react-router';
 
 const Doctor = ({ doctor }) => {
     const { id, name, image, education, speciality, experience, registrationNumber } =doctor;
@@ -7,10 +8,10 @@ const Doctor = ({ doctor }) => {
         <div>
 
             <div className="card bg-base-100  mx-7 shadow-xl hover:shadow-blue-200">
-                <figure>
+                <figure className=''>
                     <img
                         src={image}
-                        alt="Shoes" />
+                        alt="Shoes" className=''/>
                 </figure>
                 <div className='flex gap-4 py-5 px-5'>
 
@@ -28,7 +29,10 @@ const Doctor = ({ doctor }) => {
 
                     </div>
                     <div className="">
-                        <button className='border-2 border-blue-500 w-full py-2 rounded-xl text-blue-500 font-bold hover:bg-blue-500 hover:text-white'>View Details</button>
+                        <Link to={`/details/${id}`}>
+                            <button className='cursor-pointer border-2 border-blue-500 w-full py-2 rounded-xl text-blue-500 font-bold hover:bg-blue-500 hover:text-white'>View Details</button>
+
+                        </Link>
                     </div>
                 </div>
                 
